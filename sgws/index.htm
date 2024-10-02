@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма бронирования</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <form id="bookingForm">
+        <label for="name">Имя (только кириллица):</label>
+        <input type="text" id="name" required>
+        <span class="error" id="nameError"></span>
+        <br><br>
+
+        <label for="phone">Телефон (11 цифр):</label>
+        <input type="text" id="phone" required pattern="\d{11}">
+        <span class="error" id="phoneError"></span>
+        <br><br>
+
+        <label for="date">Дата бронирования:</label>
+        <input type="date" id="date" required>
+        <span class="error" id="dateError"></span>
+        <br><br>
+
+        <label for="time">Время начала бронирования:</label>
+        <input type="time" id="time" required>
+        <span class="error" id="timeError"></span>
+        <br><br>
+
+        <label for="duration">Длительность (часы):</label>
+        <select id="duration" required>
+            <option value="">Выберите</option>
+            <option value="1">1 час</option>
+            <option value="3">3 часа</option>
+            <option value="5">5 часов</option>
+        </select>
+        <span class="error" id="durationError"></span>
+        <br><br>
+
+        <label>
+            <input type="checkbox" id="consent" checked required> Я согласен с правилами
+        </label>
+        <br><br>
+
+        <button type="submit">Забронировать</button>
+    </form>
+
+    <div id="successMessage" style="display: none;"></div>
+
+    
+    <script src="script.js"></script>
+
+
+</body>
+</html>
