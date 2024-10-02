@@ -1,0 +1,24 @@
+body {
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    }
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.error {
+    color: red;
+}
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.8em;
+}
+.validation-message {
+    text-align: center;
+    }
